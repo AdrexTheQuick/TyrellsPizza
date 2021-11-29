@@ -1,0 +1,71 @@
+
+
+.logo {
+    position: relative;
+}
+
+.logo-piece {
+    display: inline-block;
+    position: absolute;
+
+}
+
+.separator {
+    height: 1px;
+}
+
+#logo-part-1 {
+    right: -3vw;
+    animation: fadeInLeft ease 1.5s;
+}
+#logo-part-2 {
+    left: 4vw;
+    animation: fadeInRight ease 2s;
+
+}
+#tagline {
+    animation: fadeInDelay ease 5s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        right: 13vw;
+        opacity: 0;
+    }
+    
+    100% {
+        right: -3vw;
+        opacity: 1;
+    }
+}
+@keyframes fadeInRight {
+    0% {
+        left: 20vw;
+        opacity: 0;
+        
+    }
+    10% {
+        left: 20vw;
+        opacity: 0;
+    }
+    100% {
+        left: 4vw;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDelay {
+    0% {
+       
+        opacity: 0;
+        
+    }
+    40% {
+
+        opacity: 0;
+    }
+    100% {
+
+        opacity: 1;
+    }
+}
